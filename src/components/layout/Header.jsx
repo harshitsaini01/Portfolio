@@ -32,7 +32,7 @@ export default function Header() {
           <span className="block w-0 h-0.5 bg-purple-500 group-hover:w-full transition-all duration-300"></span>
         </Link>
         <Link
-          to="/projects"
+          to="/project"
           className="flex flex-col items-center text-lg hover:text-purple-500 group"
         >
           <span className="flex items-center space-x-1">

@@ -61,7 +61,7 @@ const Experience = () => {
   }, []);
 
   return (
-    <div className="text-white px-6 md:px-20 py-16">
+    <div className="text-white px-6">
       <h1 className="text-white text-center text-[30px] sm:text-[40px] md:text-[45px] font-extrabold mb-8 animate__animated animate__fadeIn animate__delay-1s">
         Work <span className="text-purple-500">Experience</span>
       </h1>

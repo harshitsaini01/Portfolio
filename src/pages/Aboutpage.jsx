@@ -9,7 +9,7 @@ export default function AboutMe() {
   const words = "Know Who I'M";
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-800 via-black to-gray-900 text-white p-4 sm:p-10 lg:p-20 space-y-12 sm:space-y-16 lg:space-y-24">
+    <div className="min-h-screen bg-gradient-to-br from-gray-800 via-black to-gray-900 text-white p-4 sm:p-10 lg:p-20 space-y-10">
       {/* Intro Section */}
       <motion.div
         className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center"

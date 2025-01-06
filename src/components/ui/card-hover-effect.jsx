@@ -4,20 +4,20 @@ import { cn } from "../../lib/uttils";
 import { Link } from "react-router-dom";
 
 export const HoverEffect = ({ items, className }) => {
-  let [hoveredIndex, setHoveredIndex] = useState(null);
+  const [hoveredIndex, setHoveredIndex] = useState(null);
 
   return (
     <div
       className={cn(
-        "grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 py-4", // Responsively adjust grid size (2 items on small screens, 3 on medium, 5 on large)
+        "grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 py-4",
         className
       )}
     >
       {items.map((item, idx) => (
         <Link
-          href={item?.link}
+          to={item?.link} // Corrected to 'to' for react-router-dom Link
           key={item?.link}
-          className="relative group block p-2" // Removed width control here
+          className="relative group block p-2"
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
         >
@@ -39,11 +39,9 @@ export const HoverEffect = ({ items, className }) => {
             )}
           </AnimatePresence>
           <Card>
-            <img
-              src={item.image} // Assuming 'image' is a property in the `item` object
-              alt={item.alt || "image"}
-              className="w-full h-full object-cover rounded-2xl"
-            />
+            <div className="text-[60px] flex items-center justify-center text-white-500">
+              {item.icon} {/* Render the icon */}
+            </div>
           </Card>
         </Link>
       ))}
@@ -55,19 +53,17 @@ export const Card = ({ className, children }) => {
   return (
     <motion.div
       className={cn(
-        "rounded-lg h-full w-full p-4 overflow-hidden bg-black border border-transparent dark:border-white/[0.2] group-hover:border-slate-700 relative z-20 flex items-center justify-center transition-all duration-300 ease-out",
+        "rounded-lg h-[120px] w-full p-4 overflow-hidden bg-black border border-transparent dark:border-white/[0.2] group-hover:border-slate-700 relative z-20 flex items-center justify-center transition-all duration-300 ease-out",
         className
       )}
       whileHover={{
         scale: 1.05, // Scale the card when hovered
         boxShadow: "0 10px 20px rgba(128, 0, 128, 0.3)", // Add a soft purple shadow on hover
-        transition: { duration: 0.3 }, // Smooth transition
+        transition: { duration: 0.3 },
       }}
       whileTap={{ scale: 0.98 }} // Slightly reduce the scale on tap/click
     >
-      <div className="relative z-50">
-        <div className="p-4">{children}</div>
-      </div>
+      <div className="relative z-50">{children}</div>
     </motion.div>
   );
 };
