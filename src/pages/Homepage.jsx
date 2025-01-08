@@ -80,7 +80,7 @@ const Homepage = () => {
         </motion.h2>
 
         <motion.a
-          href="#"
+          href="/project"
           className="mt-8 px-6 py-3 bg-purple-700 text-white rounded-lg text-lg hover:bg-purple-600 hover:scale-105 transition-transform duration-300 z-10"
           whileHover={{ scale: 1.1 }}
         >

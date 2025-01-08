@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 export default function Header() {
@@ -7,7 +8,6 @@ export default function Header() {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-
   return (
     <nav className="flex items-center justify-between px-6 py-4 bg-black text-white relative">
       <Link
@@ -70,14 +70,22 @@ export default function Header() {
       </div>
 
       <div className="hidden md:flex items-center space-x-4">
-        <a
-          href="https://github.com/harshitsaini01/Portfolio"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-purple-700 text-white px-4 py-2 rounded-md hover:bg-purple-600 hover:scale-105 transition-transform duration-300"
-        >
-          Git ⭐
-        </a>
+      <a
+        href="https://github.com/harshitsaini01/Portfolio"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bg-purple-700 text-white px-4 py-2 rounded-md hover:bg-purple-600 hover:scale-105 transition-transform duration-300 flex items-center justify-center"
+      >
+        <FaGithub size={30} />
+      </a>
+      <a
+        href="https://www.linkedin.com/in/harshitsaini01"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bg-purple-700 text-white px-4 py-2 rounded-md hover:bg-purple-600 hover:scale-105 transition-transform duration-300 flex items-center justify-center"
+      >
+        <FaLinkedin size={30} />
+      </a>
       </div>
 
       {/* Hamburger Menu */}
@@ -132,7 +140,15 @@ export default function Header() {
             rel="noopener noreferrer"
             className="bg-purple-700 text-white px-4 py-2 rounded-md hover:bg-purple-600 hover:scale-105 transition-transform duration-300"
           >
-            Git ⭐
+            GitHub 
+          </a>
+          <a
+            href="https://www.linkedin.com/in/harshitsaini01"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-purple-700 text-white px-4 py-2 rounded-md hover:bg-purple-600 hover:scale-105 transition-transform duration-300"
+          >
+            Linkdin 
           </a>
         </div>
       )}
