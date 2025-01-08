@@ -6,58 +6,85 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-  }
+}
 
-  @keyframes float {
+/* Google Font Imports */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&family=Montserrat:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600;700&family=Lora:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Nunito:wght@300;400;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+/* Default Font Styles */
+body {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif; /* Default font for a modern feel */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', 'Montserrat', sans-serif; /* Elegant font for headings */
+}
+
+p, span, a, li, div {
+    font-family: 'Roboto', 'Open Sans', sans-serif; /* Clean fonts for body text */
+}
+
+button, input, textarea {
+    font-family: 'Inter', sans-serif; /* Minimal and sleek font for interactive elements */
+}
+
+blockquote {
+    font-family: 'Lora', serif; /* Elegant and sophisticated font for quotes */
+}
+
+strong, b {
+    font-family: 'Raleway', sans-serif; /* Bold and modern font for emphasis */
+}
+
+/* Animation Keyframes */
+@keyframes float {
     0%, 100% {
-      transform: translateY(0);
+        transform: translateY(0);
     }
     50% {
-      transform: translateY(-20px);
+        transform: translateY(-20px);
     }
-  }
-  
-  @keyframes float-slow {
+}
+
+@keyframes float-slow {
     0%, 100% {
-      transform: translateY(0);
+        transform: translateY(0);
     }
     50% {
-      transform: translateY(-15px);
+        transform: translateY(-15px);
     }
-  }
-  
-  @keyframes float-fast {
+}
+
+@keyframes float-fast {
     0%, 100% {
-      transform: translateY(0);
+        transform: translateY(0);
     }
     50% {
-      transform: translateY(-30px);
+        transform: translateY(-30px);
     }
-  }
-  
-  .animate-float {
+}
+
+.animate-float {
     animation: float 5s ease-in-out infinite;
-  }
-  
-  .animate-float-slow {
+}
+
+.animate-float-slow {
     animation: float-slow 7s ease-in-out infinite;
-  }
-  
-  .animate-float-fast {
+}
+
+.animate-float-fast {
     animation: float-fast 3s ease-in-out infinite;
-  }
-  
-  @keyframes blink {
+}
+
+@keyframes blink {
     0%, 100% {
-      opacity: 1;
+        opacity: 1;
     }
     50% {
-      opacity: 0;
+        opacity: 0;
     }
-  }
-  
-  .animate-blink {
+}
+
+.animate-blink {
     animation: blink 1s step-start infinite;
-  }
-  
+}

@@ -10,15 +10,14 @@ export default function ProjectPage() {
         "public/incentum/home.jpg",
         "public/incentum/loan.jpg",
         "public/incentum/form.jpg",
-        
       ],
-      title: "Incetum",
+      title: "Incentum.loans",
       description:
-        "Personal Chat Room or Workspace to share resources and hang out with friends. Built with React.js, Material-UI, and Firebase.",
+        "Developed a live responsive loan application website incentum.loans that enables users to apply for loans, upload required documents, and receive quick loan approvals with an intuitive and user-friendly interface, technologies used React.js, Tailwind CSS, JavaScript, Node.js, Express, MongoDB",
     },
     {
       images: [
-      "public/about.png",
+        "public/about.png",
         "public/image.png",
         "public/about.png",
       ],
@@ -28,7 +27,7 @@ export default function ProjectPage() {
     },
     {
       images: [
-       "public/about.png",
+        "public/about.png",
         "public/image.png",
         "public/about.png",
       ],
@@ -40,14 +39,19 @@ export default function ProjectPage() {
 
   return (
     <div>
-      <div className="min-h-screen bg-gradient-to-b from-gray-800 via-gray-900 to-black text-gray-100 py-12">
-        <h1 className="text-center text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight mb-2">
-          Welcome to <span className="text-purple-400">My Projects</span>
-        </h1>
-        <h3 className="text-center text-xl sm:text-4xl lg:text-xl font-extrabold leading-tight mb-12 ">
-          Here are a few project i've worked on recently
-        </h3>
-        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-8 px-6 lg:px-12">
+      {/* Projects Section */}
+      <div className="min-h-screen  text-gray-100 py-16 px-6">
+        <div className="text-center mb-12">
+          <h1 className="text-4xl sm:text-5xl font-extrabold mb-4 text-purple-500">
+            Welcome to <span className="text-purple-400">My Projects</span>
+          </h1>
+          <p className="text-lg sm:text-2xl text-gray-300">
+            Here are a few projects I've worked on recently.
+          </p>
+        </div>
+
+        {/* Projects Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6 lg:px-12">
           {projects.map((project, index) => (
             <ProjectCard
               key={index}
@@ -58,7 +62,9 @@ export default function ProjectPage() {
           ))}
         </div>
       </div>
-      <div className="mx-[150px] my-10 ">
+
+      {/* Hire Me Section */}
+      <div className="mx-6 sm:mx-16 lg:mx-[150px] my-10">
         <HireME />
       </div>
     </div>

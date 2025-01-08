@@ -26,7 +26,7 @@ const Bubble = ({ style }) => {
         left: position.left,
         position: "absolute",
         boxShadow: "0 4px 15px rgba(0, 0, 0, 0.5)",
-        opacity: 0.2,
+        opacity: 0.3,
       }}
       animate={{
         top: position.top,
