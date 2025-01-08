@@ -16,39 +16,39 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+  
     setLoading(true);
-
-    // Replace with your Web App URL
+  
     const scriptURL =
-      "https://script.google.com/macros/s/AKfycbzR7xfeVTWgf0yvt59IjBdknQ3N6BJfgP5EqUksXuZxX7jfl3m5VqMTXfvXNrs3g-8BEA/exec";
-      try {
-        const response = await fetch(scriptURL, {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(formData),
-        });
-    
-        if (response.ok) {
-          alert("Thank you for reaching out! Your message has been sent.");
-          setFormData({ name: "", email: "", message: "" });
-        } else {
-          console.error("Server error:", response);
-          alert("Something went wrong. Please try again.");
-        }
-      } catch (error) {
-        console.error("Error submitting form:", error);
-        alert("Error sending your message. Please check your network connection.");
-      } finally {
-        setLoading(false);
+      "https://script.google.com/macros/s/AKfycbxqfX9Oc9aR0IlWI7BYhZLJkKGhaZ0ouiF_VXQUx9slThSKlu-cNmJWdEhk0c67Y8WpzA/exec";
+  
+    try {
+      const response = await fetch(scriptURL, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded", // Critical!
+        },
+        body: new URLSearchParams(formData).toString(), // Proper encoding for Google Apps Script
+      });
+  
+      if (response.ok) {
+        alert("Thank you for reaching out! Your message has been sent.");
+        setFormData({ name: "", email: "", message: "" });
+      } else {
+        alert("Something went wrong. Please try again.");
       }
-    };
+    } catch (error) {
+      alert("Error sending your message. Please check your network connection.");
+    } finally {
+      setLoading(false);
+    }
+  };
+  
+
 
   return (
     <div className="bg-black text-white min-h-screen flex flex-col items-center justify-center px-6">
-      {/* Background Dots */}
+      {/* Background Floating Dots */}
       <div className="absolute inset-0 pointer-events-none">
         {[...Array(15)].map((_, index) => (
           <div
@@ -64,12 +64,17 @@ const Contact = () => {
         ))}
       </div>
 
+      {/* Contact Form Section */}
       <div className="relative z-10 w-full max-w-3xl bg-gray-900 p-8 rounded-lg shadow-lg">
         <h1 className="text-4xl md:text-5xl font-bold text-purple-500 mb-6 text-center">
           Contact Me
         </h1>
 
-        <form onSubmit={handleSubmit} className="flex flex-col gap-6">
+        <form
+          onSubmit={handleSubmit}
+          className="flex flex-col gap-6"
+        >
+          {/* Name Input */}
           <div className="flex flex-col">
             <label htmlFor="name" className="text-lg mb-2">
               Name
@@ -86,6 +91,7 @@ const Contact = () => {
             />
           </div>
 
+          {/* Email Input */}
           <div className="flex flex-col">
             <label htmlFor="email" className="text-lg mb-2">
               Email
@@ -102,6 +108,7 @@ const Contact = () => {
             />
           </div>
 
+          {/* Message Input */}
           <div className="flex flex-col">
             <label htmlFor="message" className="text-lg mb-2">
               Message
@@ -118,6 +125,7 @@ const Contact = () => {
             />
           </div>
 
+          {/* Submit Button */}
           <button
             type="submit"
             className="bg-purple-700 text-white px-8 py-3 rounded-lg text-lg hover:bg-purple-600 hover:scale-105 transition-transform duration-300"
