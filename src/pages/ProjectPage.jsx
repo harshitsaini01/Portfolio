@@ -6,11 +6,13 @@ export default function ProjectPage() {
   const projects = [
     {
       images: [
-        "public/about.png",
-        "public/image.png",
-        "public/about.png",
+        "public/incentum/signup.jpg",
+        "public/incentum/home.jpg",
+        "public/incentum/loan.jpg",
+        "public/incentum/form.jpg",
+        
       ],
-      title: "Chatify",
+      title: "Incetum",
       description:
         "Personal Chat Room or Workspace to share resources and hang out with friends. Built with React.js, Material-UI, and Firebase.",
     },
