@@ -5,37 +5,33 @@ import HireME from "../components/uicomponents/HireMe";
 export default function ProjectPage() {
   const projects = [
     {
-      image: "public/about.png",
-      title: "Chatify",
+      images: [
+        "public/incentum/signup.jpg",
+        "public/incentum/home.jpg",
+        "public/incentum/loan.jpg",
+        "public/incentum/form.jpg",
+        
+      ],
+      title: "Incetum",
       description:
         "Personal Chat Room or Workspace to share resources and hang out with friends. Built with React.js, Material-UI, and Firebase.",
     },
     {
-      image: "public/about.png",
+      images: [
+      "public/about.png",
+        "public/image.png",
+        "public/about.png",
+      ],
       title: "Bits-of-Code",
       description:
         "My personal blog built with Next.js and Tailwind CSS, which takes content from markdown files and renders it dynamically.",
     },
     {
-      image: "public/about.png",
-      title: "Bits-of-Code",
-      description:
-        "My personal blog built with Next.js and Tailwind CSS, which takes content from markdown files and renders it dynamically.",
-    },
-    {
-      image: "public/about.png",
-      title: "Bits-of-Code",
-      description:
-        "My personal blog built with Next.js and Tailwind CSS, which takes content from markdown files and renders it dynamically.",
-    },
-    {
-      image: "public/about.png",
-      title: "Bits-of-Code",
-      description:
-        "My personal blog built with Next.js and Tailwind CSS, which takes content from markdown files and renders it dynamically.",
-    },
-    {
-      image: "public/image.png",
+      images: [
+       "public/about.png",
+        "public/image.png",
+        "public/about.png",
+      ],
       title: "Editor.io",
       description:
         "Online code editor supporting HTML, CSS, and JavaScript. Includes a markdown editor and live preview support.",
@@ -55,7 +51,7 @@ export default function ProjectPage() {
           {projects.map((project, index) => (
             <ProjectCard
               key={index}
-              image={project.image}
+              images={project.images}
               title={project.title}
               description={project.description}
             />
