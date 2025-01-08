@@ -64,7 +64,7 @@ const Contact = () => {
         ))}
       </div>
 
-      {/* Contact Form Section */}
+      {/* Contact Form uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuSection */}
       <div className="relative z-10 w-full max-w-3xl bg-gray-900 p-8 rounded-lg shadow-lg">
         <h1 className="text-4xl md:text-5xl font-bold text-purple-500 mb-6 text-center">
           Contact Me
