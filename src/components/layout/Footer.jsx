@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 const Footer = () => {
@@ -25,18 +26,20 @@ const Footer = () => {
         <h3 className="text-3xl mr-20 mt-2 font-bold text-center text-purple-500">
           Get In Touch
         </h3>
-          <motion.a
-            href="mailto:harshitsaini0019@gmail.com"
-            className="px-6 py-3 bg-purple-700 text-white rounded-lg text-lg hover:bg-purple-600 hover:scale-105 transition-transform duration-300"
-            whileHover={{ scale: 1.1 }}
-          >
-            Contact Me
-          </motion.a>
+        <motion.div
+  className="px-6 py-3 bg-purple-700 text-white rounded-lg text-lg hover:bg-purple-600 hover:scale-105 transition-transform duration-300"
+  whileHover={{ scale: 1.1 }}
+>
+  <Link to="/contact-me" className="block text-center">
+    Contact Me
+  </Link>
+</motion.div>
+
         </div>
         <div className="border-t border-gray-400 mt-8 pt-6 flex flex-col sm:flex-row justify-between items-center text-sm">
-        <p className="text-center sm:text-left">Statutory legal information</p>
+        <p className="text-center sm:text-left">Made  with love ❤️ </p>
         <p className="text-center sm:text-right sm:mt-0">
-          2024-2025 Harshit-Portfolio | Site Map | Privacy Policy
+          2025-2026 Harshit-Portfolio 
         </p>
       </div>
       </section>

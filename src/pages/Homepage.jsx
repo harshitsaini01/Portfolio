@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { FaGithub, FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 import { FaX, FaXTwitter } from "react-icons/fa6";
+import TypeAnimation from "../components/TypeAnimation";
 
 const Bubble = ({ style }) => {
   const [position, setPosition] = useState({
@@ -66,6 +67,7 @@ const Homepage = () => {
           transition={{ duration: 1 }}
         >
           Hi, I'm Harshit Saini
+          
         </motion.h1>
 
         <motion.h2
@@ -74,7 +76,7 @@ const Homepage = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.5 }}
         >
-          A Passionate Software Developer
+          <TypeAnimation />
         </motion.h2>
 
         <motion.a
@@ -95,7 +97,7 @@ const Homepage = () => {
       </section>
       <section
         id="about"
-        className="py-12 px-6 bg-black flex flex-col md:flex-row items-center justify-center relative"
+        className="py-12 px-6 m-4 bg-black flex flex-col md:flex-row items-center justify-center relative"
       >
         <motion.div
           className="absolute inset-0  opacity-20 blur-3xl"
@@ -110,9 +112,10 @@ const Homepage = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
         >
-          <h3 className="text-4xl md:text-4xl font-bold text-purple-500 mb-8">
+
+          <h2 className="text-4xl md:text-4xl font-bold text-purple-500 mb-8">
             Let Me Introduce Myself
-          </h3>
+          </h2>
           <p className="text-lg md:text-xl max-w-4xl mx-auto md:mx-0 leading-relaxed">
             I fell in love with programming and I have at least learnt
             something, I think… 🤷‍♂

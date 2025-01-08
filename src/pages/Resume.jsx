@@ -31,7 +31,7 @@ const Resume = () => {
             style={{
               top: dot.top,
               left: dot.left,
-              width: `${Math.random() * 6 + 4}px`, // Random size between 4px and 10px
+              width: `${Math.random() * 6 + 4}px`, 
               height: `${Math.random() * 6 + 4}px`,
               opacity: 0.7,
             }}
