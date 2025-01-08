@@ -7,48 +7,21 @@ const Contact = () => {
     message: "",
   });
 
-  const [loading, setLoading] = useState(false);
-
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({ ...prevData, [name]: value }));
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-
-    setLoading(true);
-
-    // Replace with your Web App URL
-    const scriptURL =
-      "https://script.google.com/macros/s/AKfycbzR7xfeVTWgf0yvt59IjBdknQ3N6BJfgP5EqUksXuZxX7jfl3m5VqMTXfvXNrs3g-8BEA/exec";
-      try {
-        const response = await fetch(scriptURL, {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(formData),
-        });
-    
-        if (response.ok) {
-          alert("Thank you for reaching out! Your message has been sent.");
-          setFormData({ name: "", email: "", message: "" });
-        } else {
-          console.error("Server error:", response);
-          alert("Something went wrong. Please try again.");
-        }
-      } catch (error) {
-        console.error("Error submitting form:", error);
-        alert("Error sending your message. Please check your network connection.");
-      } finally {
-        setLoading(false);
-      }
-    };
+    // 
+    alert("Thank you for reaching out! I will get back to you soon.");
+    setFormData({ name: "", email: "", message: "" });
+  };
 
   return (
     <div className="bg-black text-white min-h-screen flex flex-col items-center justify-center px-6">
-      {/* Background Dots */}
+      {/* Backgroundddd dottt */}
       <div className="absolute inset-0 pointer-events-none">
         {[...Array(15)].map((_, index) => (
           <div
@@ -121,9 +94,8 @@ const Contact = () => {
           <button
             type="submit"
             className="bg-purple-700 text-white px-8 py-3 rounded-lg text-lg hover:bg-purple-600 hover:scale-105 transition-transform duration-300"
-            disabled={loading}
           >
-            {loading ? "Sending..." : "Send Message"}
+            Send Message
           </button>
         </form>
       </div>
