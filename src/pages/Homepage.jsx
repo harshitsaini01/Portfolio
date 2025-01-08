@@ -66,7 +66,7 @@ const Homepage = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          Hi, I'm Harshit Saini
+          Hi, I'm Prince Saini
           
         </motion.h1>
 
@@ -148,7 +148,7 @@ const Homepage = () => {
 
       <div className="flex space-x-6">
         <a
-          href="https://github.com/harshitsaini01"
+          href="https://github.com/codewithprince01?tab=repositories"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-purple-700 text-white p-4 rounded-full text-3xl hover:bg-purple-600 transition-transform transform hover:scale-110"
@@ -166,7 +166,7 @@ const Homepage = () => {
         </a>
 
         <a
-          href="https://www.linkedin.com/in/harshitsaini01/"
+          href="https://www.linkedin.com/in/prince-saini-95b35a236/"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-purple-700 text-white p-4 rounded-full text-3xl hover:bg-purple-600 transition-transform transform hover:scale-110"

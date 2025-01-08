@@ -71,7 +71,7 @@ export default function Header() {
 
       <div className="hidden md:flex items-center space-x-4">
       <a
-        href="https://github.com/harshitsaini01/Portfolio"
+        href="https://github.com/codewithprince01?tab=repositories"
         target="_blank"
         rel="noopener noreferrer"
         className="bg-purple-700 text-white px-4 py-2 rounded-md hover:bg-purple-600 hover:scale-105 transition-transform duration-300 flex items-center justify-center"
@@ -79,7 +79,7 @@ export default function Header() {
         <FaGithub size={30} />
       </a>
       <a
-        href="https://www.linkedin.com/in/harshitsaini01"
+        href="https://www.linkedin.com/in/prince-saini-95b35a236/"
         target="_blank"
         rel="noopener noreferrer"
         className="bg-purple-700 text-white px-4 py-2 rounded-md hover:bg-purple-600 hover:scale-105 transition-transform duration-300 flex items-center justify-center"
@@ -135,7 +135,7 @@ export default function Header() {
             Contact me
           </Link>
           <a
-            href="https://github.com/harshitsaini01/Portfolio"
+            href="https://github.com/codewithprince01?tab=repositories"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-purple-700 text-white px-4 py-2 rounded-md hover:bg-purple-600 hover:scale-105 transition-transform duration-300"
@@ -143,7 +143,7 @@ export default function Header() {
             GitHub 
           </a>
           <a
-            href="https://www.linkedin.com/in/harshitsaini01"
+            href="https://www.linkedin.com/in/prince-saini-95b35a236/"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-purple-700 text-white px-4 py-2 rounded-md hover:bg-purple-600 hover:scale-105 transition-transform duration-300"
