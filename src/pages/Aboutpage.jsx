@@ -25,17 +25,20 @@ export default function AboutMe() {
             />
           </div>
           <p className="text-base sm:text-lg md:text-xl text-gray-300 max-w-xs sm:max-w-md lg:max-w-lg mx-auto">
-            Hi Everyone, I am <span className="text-purple-500 font-semibold">Soumyajit Behera</span> from Bhubaneswar, India.
-            <br /> I am currently employed as a software developer at <span className="text-purple-500 font-semibold">Juspay</span>.
-            <br /> I have completed an Integrated MSc (IMSc) in Maths and Computing at <span className="text-purple-500 font-semibold">BIT Mesra</span>.
-            <br /><br />
+            Hi Everyone, I am <span className="text-purple-500 font-semibold">Harshit Saini</span> from Dehradun, India.
+            <br /> 
+            I am currently employed as a MERN Stack developer at <span className="text-purple-500 font-semibold">Haxways</span>.
+            <br />
+            I have completed my graduation with a Bachelor of Computer Applications at <span className="text-purple-500 font-semibold">Quantum University</span>.
+            <br />
+            <br />
             Apart from coding, I love to:
             <ul className="list-disc list-inside text-purple-400">
-              <li>Play Games</li>
-              <li>Write Tech Blogs</li>
+              <li>Play games</li>
               <li>Travel</li>
             </ul>
           </p>
+
         </div>
         <div className="relative flex justify-center items-center">
           <motion.img

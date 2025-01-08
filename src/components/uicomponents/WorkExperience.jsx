@@ -2,38 +2,20 @@ import React, { useEffect, useRef, useState } from "react";
 import "animate.css";
 
 const experiences = [
-  {
-    duration: "July 2022 - Present",
-    title: "GRAPHIC DESIGNER",
-    company: "APPINVENTIV TECHNOLOGIES PVT. LTD.",
-    work: "Blogs, Social Media, Newsletter & so on.",
-    tools: "Adobe Photoshop, Adobe Illustrator, Adobe XD",
-  },
-  {
-    duration: "Feb 2022 - Jul 2022",
-    title: "Associate Graphic Designer",
-    company: "PREPLADDER (UNACADEMY)",
-    work:
-      "Books, Social Media, Newsletter, YouTube Thumbnails, E-books, Handbook, Class Scheduling (youtube), KeyNotes etc.",
-    tools:
-      "Adobe Photoshop, Adobe Illustrator, Adobe XD, Adobe InDesign, Canva, YouTube Studio",
-  },
-  {
-    duration: "Nov 2021 - Jan 2022",
-    title: "Associate Graphic Designer",
-    company: "INCOUNSE",
-    work:
-      "Books, Social Media, Newsletter, YouTube Thumbnails, E-books, Handbook, Class Scheduling (youtube), KeyNotes etc.",
-    tools:
-      "Adobe Photoshop, Adobe Illustrator, Adobe XD, Adobe InDesign, Canva, YouTube Studio",
-  },
-  {
-    duration: "Aug 2021 - Sep 2021",
-    title: "GRAPHIC DESIGNER",
-    company: "CANTILEVER LABS (FREELANCE)",
-    work: "Social Media, Email Designing",
-    tools: "Adobe Photoshop, Adobe Illustrator, Sendinblue, Zoho",
-  },
+    {
+      duration: "April 2024 - Present",
+      title: "Full Stack Developer",
+      company: "Haxways",
+      work: "Developed and enhanced frontend and backend using React and the MERN stack, ensuring responsiveness and cross-browser compatibility. Collaborated with designers to create user-friendly interfaces and optimized performance.",
+      tools: "React, MERN Stack, Git, GitHub, Tailwind CSS, Node.js, Express.js, MongoDB"
+    },
+    {
+      duration: "Oct 2023 - April 2024",
+      title: "Test Engineer",
+      company: "GlobalStep",
+      work: "Increased testing efficiency by 30% through script management. Deployed builds after QA cycles, wrote test cases, and maintained 98% bug identification accuracy on 'Marvel Strike Force.' Collaborated with US clients and used tools like JIRA and Confluence to track over 100+ bug fixes.",
+      tools: "JIRA, Confluence, Debug Consoles, Performance Tools, Bug Tracking Software, Scripts"
+    } 
 ];
 
 const Experience = () => {

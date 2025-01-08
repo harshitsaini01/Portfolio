@@ -113,26 +113,32 @@ const Homepage = () => {
           transition={{ duration: 1 }}
         >
 
-          <h2 className="text-4xl md:text-4xl font-bold text-purple-500 mb-8">
+          <h2 className="text-5xl md:text-5xl text-center font-bold text-purple-500 mb-8">
             Let Me Introduce Myself
           </h2>
           <p className="text-lg md:text-xl max-w-4xl mx-auto md:mx-0 leading-relaxed">
-            I fell in love with programming and I have at least learnt
-            something, I think… 🤷‍♂
+            I have <span className="text-purple-500">1+ years of experience in MERN stack development</span>, along with <span className="text-purple-500">6 months of experience as a QA Test Engineer</span> in a multinational company. These experiences have helped me gain significant knowledge and expertise in both development and quality assurance.
             <br />
-            I am fluent in classics like <span className="text-purple-500">C++, JavaScript,</span> and <span className="text-purple-500">Go</span>.
             <br />
-            My field of interest includes building new <span className="text-purple-500">Web Technologies</span> and <span className="text-purple-500">Products</span> and exploring <span className="text-purple-500">Blockchain</span>-related areas.
+            I am proficient in programming languages like <span className="text-purple-500">C</span>, <span className="text-purple-500">C++</span>, and <span className="text-purple-500">JavaScript</span>.
             <br />
-            Whenever possible, I also apply my passion for developing products
-            using <span className="text-purple-500">Node.js</span> and modern
-            JavaScript frameworks like <span className="text-purple-500">React.js</span> and <span className="text-purple-500">Next.js</span>.
+            My expertise spans frameworks and libraries such as <span className="text-purple-500">React</span>, <span className="text-purple-500">Tailwind CSS</span>, <span className="text-purple-500">Node.js</span>, and <span className="text-purple-500">Express.js</span>.
+            <br />
+            <br />
+            I am skilled in working with databases like <span className="text-purple-500">MongoDB</span> and <span className="text-purple-500">MySQL</span>, as well as version control tools like <span className="text-purple-500">Git</span> and <span className="text-purple-500">GitHub</span>.
+            <br />
+            My interests include developing <span className="text-purple-500">Web Technologies</span>, <span className="text-purple-500">Databases</span>, and innovative <span className="text-purple-500">Products</span>, while leveraging my skills in <span className="text-purple-500">Data Structures and Algorithms</span>.
+            <br />
+            <br />
+            Whenever possible, I channel my passion into building innovative and efficient solutions using tools like <span className="text-purple-500">Node.js</span> and modern JavaScript frameworks such as <span className="text-purple-500">React.js</span> and <span className="text-purple-500">Next.js</span>.
           </p>
+
+
         </motion.div>
         <motion.img
-          src="public/about.png"
+          src="public/human_icon.svg"
           alt="Human working on laptop"
-          className="md:w-1/2 w- 64 md:w- 80 mt-12 md:mt-0 z-10"
+          className="md:w-1/4 w- 64 md:w- 80 mt-12 md:mt-0 z-10"
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
