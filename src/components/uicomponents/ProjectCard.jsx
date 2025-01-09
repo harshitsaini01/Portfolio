@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { FaGithub } from "react-icons/fa";
 import { TiDocumentText } from "react-icons/ti";
+import { Link } from "react-router-dom";
 
 const ProjectCard = ({
   images = [],
@@ -74,9 +75,12 @@ const ProjectCard = ({
           <button className="flex justify-center px-4 py-2 rounded-full bg-purple-600 hover:bg-purple-500 transition text-white font-semibold shadow-md">
             <FaGithub className="h-6 mr-[5px]" /> GitHub
           </button>
+          <Link
+          to="https://incentum.ai/">
           <button className="flex justify-center px-4 py-2 rounded-full bg-purple-600 hover:bg-purple-500 transition text-white font-semibold shadow-md">
             <TiDocumentText className="h-6 mr-[5px]" /> Demo
           </button>
+          </Link>
         </div>
       </div>
     </div>

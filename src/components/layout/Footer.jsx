@@ -39,7 +39,7 @@ const Footer = () => {
         <div className="border-t border-gray-400 mt-8 pt-6 flex flex-col sm:flex-row justify-between items-center text-sm">
         <p className="text-center sm:text-left">Made  with love ❤️ </p>
         <p className="text-center sm:text-right sm:mt-0">
-          2025-2026 Prince-Portfolio 
+          2025-2026 Harshit-Portfolio 
         </p>
       </div>
       </section>

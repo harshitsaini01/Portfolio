@@ -24,6 +24,7 @@ export default function AboutMe() {
               className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-400 to-pink-400 animate-text-shadow"
             />
           </div>
+          
           <p className="text-base sm:text-lg md:text-xl text-gray-400 max-w-xs sm:max-w-md lg:max-w-lg mx-auto leading-relaxed">
             Hi Everyone, I am <span className="text-indigo-400 font-semibold">Harshit Saini</span> from Dehradun, India.
             <br />
