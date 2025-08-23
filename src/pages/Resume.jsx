@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
+import resumePDF from "../assets/Harshit_resume.pdf";
 
 const Resume = () => {
-  const resumeLink = "/Harshit_resume.pdf"; // Path to your resume PDF
+  const resumeLink = resumePDF; // Path to your resume PDF
 
   // Generate random dots
   const [dots, setDots] = useState([]);
@@ -31,7 +32,7 @@ const Resume = () => {
             style={{
               top: dot.top,
               left: dot.left,
-              width: `${Math.random() * 6 + 4}px`, 
+              width: `${Math.random() * 6 + 4}px`,
               height: `${Math.random() * 6 + 4}px`,
               opacity: 0.7,
             }}

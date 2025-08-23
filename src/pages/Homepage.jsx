@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 import { FaX, FaXTwitter } from "react-icons/fa6";
 import TypeAnimation from "../components/TypeAnimation";
+import humanIcon from "../assets/human_icon.svg";
 
 const Bubble = ({ style }) => {
   const [position, setPosition] = useState({
@@ -136,7 +137,7 @@ const Homepage = () => {
 
         </motion.div>
         <motion.img
-          src="public/human_icon.svg"
+          src={humanIcon}
           alt="Human working on laptop"
           className="md:w-1/4 w- 64 md:w- 80 mt-12 md:mt-0 z-10"
           initial={{ opacity: 0, x: 50 }}

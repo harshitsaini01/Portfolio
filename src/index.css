@@ -88,3 +88,251 @@ strong, b {
 .animate-blink {
     animation: blink 1s step-start infinite;
 }
+
+/* Modal Enhancements */
+.modal-content {
+    scrollbar-width: thin;
+    scrollbar-color: #8b5cf6 #e5e7eb;
+}
+
+.modal-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.modal-content::-webkit-scrollbar-track {
+    background: #f3f4f6;
+    border-radius: 10px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #8b5cf6, #6366f1);
+    border-radius: 10px;
+    border: 2px solid #f3f4f6;
+}
+
+.modal-content::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #7c3aed, #5b21b6);
+}
+
+/* Project Details Typography */
+.project-details {
+    color: #374151;
+    line-height: 1.7;
+}
+
+.project-details h1,
+.project-details h2,
+.project-details h3 {
+    color: #1f2937;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    position: relative;
+}
+
+.project-details h1 {
+    font-size: 2rem;
+    background: linear-gradient(135deg, #8b5cf6, #6366f1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    border-bottom: 3px solid #8b5cf6;
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.project-details h2 {
+    font-size: 1.5rem;
+    color: #7c3aed;
+    border-left: 4px solid #8b5cf6;
+    padding-left: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.project-details h3 {
+    font-size: 1.25rem;
+    color: #6b21a8;
+    margin-top: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.project-details p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    color: #374151;
+}
+
+.project-details ul {
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+    list-style: none;
+}
+
+.project-details li {
+    margin-bottom: 0.75rem;
+    line-height: 1.6;
+    position: relative;
+    padding-left: 0;
+}
+
+/* Feature Icons */
+.feature-icon {
+    display: inline-block;
+    margin-right: 0.5rem;
+    font-size: 1.2em;
+    filter: drop-shadow(0 2px 4px rgba(139, 92, 246, 0.3));
+}
+
+/* Technology Stack Styling */
+.tech-stack {
+    background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-left: 4px solid #8b5cf6;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.tech-stack h3 {
+    color: #7c3aed;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.tech-stack ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.tech-stack li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #d1d5db;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.tech-stack li:last-child {
+    border-bottom: none;
+}
+
+.tech-stack li::before {
+    content: "▸";
+    color: #8b5cf6;
+    font-weight: bold;
+    margin-right: 0.75rem;
+}
+
+/* Modal Backdrop Blur */
+.modal-backdrop {
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+/* Button Hover Effects */
+.btn-hover-effect {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-hover-effect::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: left 0.5s;
+}
+
+.btn-hover-effect:hover::before {
+    left: 100%;
+}
+
+/* Card Hover Animation */
+.card-hover {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-hover:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+/* Loading Animation */
+@keyframes shimmer {
+    0% {
+        background-position: -200px 0;
+    }
+    100% {
+        background-position: calc(200px + 100%) 0;
+    }
+}
+
+.shimmer {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200px 100%;
+    animation: shimmer 1.5s infinite;
+}
+
+/* Project Details Specific Styling */
+.project-details strong {
+    color: #7c3aed;
+    font-weight: 600;
+}
+
+.project-details em {
+    color: #6b21a8;
+    font-style: italic;
+}
+
+/* Key Features Section */
+.project-details h2:contains("Key Features") {
+    background: linear-gradient(135deg, #8b5cf6, #6366f1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Technology Stack Section */
+.project-details h2:contains("Technology Stack") {
+    color: #7c3aed;
+    border-left: 4px solid #8b5cf6;
+    padding-left: 1rem;
+}
+
+/* Project Overview Section */
+.project-details h2:contains("Project Overview") {
+    background: linear-gradient(135deg, #8b5cf6, #6366f1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Future Enhancements Section */
+.project-details h2:contains("Future Enhancements") {
+    color: #059669;
+    border-left: 4px solid #10b981;
+    padding-left: 1rem;
+}
+
+/* Project Impact Section */
+.project-details h2:contains("Project Impact") {
+    color: #dc2626;
+    border-left: 4px solid #ef4444;
+    padding-left: 1rem;
+}
+
+/* Code Quality Section */
+.project-details h2:contains("Code Quality") {
+    color: #7c2d12;
+    border-left: 4px solid #ea580c;
+    padding-left: 1rem;
+}
