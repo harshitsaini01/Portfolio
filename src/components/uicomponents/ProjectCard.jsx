@@ -241,7 +241,7 @@ const ProjectCard = ({
       </div>
       <div className="flex items-center text-purple-200 bg-purple-800 bg-opacity-30 px-3 py-1 rounded-full">
         <FaDatabase className="mr-2" />
-        <span>Database.</span>
+        <span>Database</span>
       </div>
     </div>
   </motion.div>
